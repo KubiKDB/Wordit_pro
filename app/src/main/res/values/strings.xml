@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Wordit! Pro</string>
+    <string name="rules">Game:
+You get a pair of words. In order to win, you have to transform the former word to the latter one by 7 steps.
+Rules:
+On each step you have to transform the previous word by one of the following:
+1. Changing the letters\' position.
+For instance, the word "team" can be transformed to "meat", "tame" or "mate".
+2. Adding/deleting one of the letters.
+For instance, the word "mate" can be changed to "mates" or "mat". Thus, "meat" -> "mates".
+3. Changing one of the letters: "team" -> "teem"
+Also, you can do all the three actions simultaneously: "team" -> "meets"
+Examples:
+     Word    Day      Boy
+     Row     Way      Bay
+     Bow     Weak    May
+     Book    Week    Man
+
+Those are relatively simple transformations, it must be much tougher. Are you ready to get in?</string>
+</resources>
