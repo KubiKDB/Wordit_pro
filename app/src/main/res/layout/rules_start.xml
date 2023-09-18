@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/headColor">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/gif"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:src="@drawable/wordit_gif"-->
+<!--        android:elevation="5dp"-->
+<!--        android:background="@color/black"/>-->
+
+    <TextView
+        android:id="@+id/game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:layout_margin="10dp"
+        android:textColor="#00FF00"
+        android:text="Game:"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/game"/>
+
+    <TextView
+        android:id="@+id/rules"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:layout_margin="10dp"
+        android:text="Rules:"
+        android:textColor="#00FF00"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/text1"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rules"/>
+
+    <TextView
+        android:id="@+id/examples"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:layout_margin="10dp"
+        android:text="Examples:"
+        android:textColor="#00FF00"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/text2"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/examples"/>
+
+    <TextView
+        android:id="@+id/text_wordit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="So, let's Wordit! To start press"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/button_wordit"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/yellow"
+        android:textSize="25dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/square_blue"
+        app:layout_constraintBottom_toBottomOf="@id/text_wordit"
+        app:layout_constraintTop_toTopOf="@id/text_wordit"
+        app:layout_constraintLeft_toRightOf="@id/text_wordit"
+        android:text="PLAY"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
